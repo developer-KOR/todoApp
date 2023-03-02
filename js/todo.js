@@ -114,6 +114,7 @@ if ( savedTodos !== null ){
 // placeholder 추가 제거
 function focusInput (){
   toDoInput.placeholder = '';
+  toDoInput.style.fontFamily = 'Noto Sans KR';
 }
 
 function focusOutput (){

@@ -50,20 +50,20 @@ function onSubmit(info) {
   info.preventDefault();
   loginForm.classList.add(HIDDEN_CLASSNAME);
   const username = loginInput.value;
-  
+
   localStorage.setItem(USERNAME_KEY, username);
   paintGreetings(username);
 }
 
-function paintGreetings(username){
+function paintGreetings(username) {
   userHello.innerHTML = `Let's protect peace of the universe. <br /> ${username}`;
   userHello.classList.remove(HIDDEN_CLASSNAME);
-  document.title = `${username}'s todo-lists`
+  document.title = `${username}'s todo-lists`;
 }
 
 const isUsername = localStorage.getItem(USERNAME_KEY);
 
-if ( isUsername === null ){
+if (isUsername === null) {
   loginForm.classList.remove(HIDDEN_CLASSNAME);
   loginForm.addEventListener("submit", onSubmit);
 } else {
@@ -71,13 +71,16 @@ if ( isUsername === null ){
 }
 
 // placeholder 추가 제거
-function focusInput (){
-  loginInput.placeholder = '';
+function focusInput() {
+  loginInput.placeholder = "";
+  loginInput.style.fontFamily = "Noto Sans KR";
 }
 
-function focusOutput (){
-  loginInput.placeholder = 'Write your name and enter!';
+function focusOutput() {
+  loginInput.placeholder = "Write your name and enter!";
 }
 
 loginInput.addEventListener("focusin", focusInput);
 loginInput.addEventListener("focusout", focusOutput);
+
+// 이름 삭제하기

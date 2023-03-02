@@ -15,7 +15,7 @@ const quotes = [{
     author: "Zeratul",
   },
   {
-    quote: " I am ready.",
+    quote: "This is not Warcraft in space! It's much more sophisticated!",
     author: "Artanis",
   },
   {

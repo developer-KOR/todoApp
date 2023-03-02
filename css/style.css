@@ -7,6 +7,10 @@
   display: none;
 }
 
+.opacity {
+  opacity: 0;
+}
+
 @font-face {
   font-family: Starcraft;
   src: url(../font/Starcraft\ Normal.ttf);
@@ -41,6 +45,11 @@
 
 #wrap h1 {
   font-size: 64px;
+}
+
+.name_btn {
+  cursor: pointer;
+  transition: all .3s;
 }
 
 #wrap h2 {
