@@ -12,6 +12,12 @@
   src: url(../font/Starcraft\ Normal.ttf);
 }
 
+#todo-form, #todo-list, #clock, #greeting, #login-form, #quote, #weather {
+  margin: 15px 0;
+  text-align: center;
+  z-index: 1;
+}
+
 /* 본문 */
 .main_icon {
   position: absolute;
@@ -26,10 +32,12 @@
   flex-direction: column;
   align-items: center;
   justify-content: center;
+  flex-basis: content;
   height: 100vh;
   font-family: 'Starcraft', 'Roboto', 'Noto Sans KR', sans-serif;
   color: #fff;
 }
+
 
 #wrap h1 {
   font-size: 64px;
@@ -58,11 +66,6 @@
   z-index: -1;
 }
 
-#todo-form, #todo-list, #clock, #greeting, #login-form, #quote, #weather {
-  margin: 15px 0;
-  text-align: center;
-  z-index: 1;
-}
 
 #todo-form input, #login-form input:first-child {
   width: 350px;
@@ -78,9 +81,10 @@
 }
 
 #login-form input:first-child::placeholder {
+  font-family: 'Starcraft', sans-serif;
   text-align: center;
   color: #fff;
-  font-size: 28px;
+  font-size: 16px;
   margin-bottom: 5px;
 }
 
@@ -145,6 +149,10 @@
 #quote p {
   font-size: 32px;
   text-align: center;
+}
+
+#quote p:last-child {
+  margin-top: 15px;
 }
 
 #weather {
