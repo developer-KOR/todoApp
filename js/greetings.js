@@ -56,7 +56,7 @@ function onSubmit(info) {
 }
 
 function paintGreetings(username) {
-  userHello.innerHTML = `Let's protect peace of the universe. <br /> ${username}`;
+  userHello.innerHTML = `${username}'s evolution complete.`;
   userHello.classList.remove(HIDDEN_CLASSNAME);
   document.title = `${username}'s todo-lists`;
 }
