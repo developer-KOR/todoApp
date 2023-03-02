@@ -1,0 +1,15 @@
+body {
+  background-color: #f0f9f5;
+  font-family: "Noto Sans", sans-serif;
+  font-size: 24px;
+}
+
+.sexy-font {
+  color: #161616;
+  transition: color .4s;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.active {
+  color: #ff0000;
+}

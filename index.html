@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="css/style.css" />
+    <link rel="icon" href="img/sc.png">
+    <title>Momentum</title>
+    <style>
+
+    </style>
+  </head>
+  <body>
+    <a class="main_icon" href="https://www.starcraft.com/ko-kr" target="_blank">
+      <img src="img/starcraft_remastered.png" alt="starcraft">
+    </a>
+    <div id="wrap">
+      <h2 id="clock">00:00:00</h2>
+      <form id="login-form" class="hidden">
+        <input class="name" required maxlength="15" type="text" placeholder="Write your name and enter!"/>
+        <!-- <input type="submit" value="Log In" /> -->
+      </form>
+      <h1 id="greeting" class="hidden"></h1>
+      <form id="todo-form">
+        <input type="text" placeholder="What's your today's work?" required autofocus />
+      </form>
+      <ul id="todo-list"></ul>
+      <!-- <ol id="saved-list">
+        <h3>Today's work</h3>
+      </ol> -->
+      <div id="quote">
+        <p class="phrase"></p>
+        <p class="author"></p>
+      </div>
+      <div id="weather">
+        <span></span>
+        <span></span>
+      </div>
+      <div class="cover"></div>
+    </div>
+    
+    <!-- script -->
+    <script src="js/greetings.js"></script>
+    <script src="js/clock.js"></script>
+    <script src="js/quotes.js"></script>
+    <script src="js/background.js"></script>
+    <script src="js/todo.js"></script>
+    <script src="js/weather.js"></script>
+  </body>
+</html>
