@@ -56,7 +56,7 @@ function onSubmit(info) {
 }
 
 function paintGreetings(username){
-  userHello.innerText = `You are the Best! ${username}`;
+  userHello.innerHTML = `Let's protect peace of the universe. <br /> ${username}`;
   userHello.classList.remove(HIDDEN_CLASSNAME);
 }
 
