@@ -45,6 +45,22 @@
 
 #wrap h1 {
   font-size: 64px;
+  margin-left: 28px;
+}
+
+#wrap h1 .icon_hide, #wrap h1:hover .icon_hide {
+  font-size: 28px;
+  vertical-align: middle;
+}
+
+#wrap h1 .icon_hide {
+  opacity: 0;
+  transition: .3s;
+}
+
+#wrap h1:hover .icon_hide {
+  opacity: 1;
+  cursor: pointer;
 }
 
 .name_btn {
@@ -171,5 +187,6 @@
   right: 15px;
   font-family: 'NanumSquare', sans-serif;
   font-size: 24px;
+  font-weight: bold;
   text-align: center;
 } 

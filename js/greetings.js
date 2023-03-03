@@ -56,9 +56,22 @@ function onSubmit(info) {
 }
 
 function paintGreetings(username) {
-  userHello.innerHTML = `${username}'s evolution complete.`;
+  userHello.innerHTML = `evolution complete. ${username} `;
   userHello.classList.remove(HIDDEN_CLASSNAME);
   document.title = `${username}'s todo-lists`;
+
+  // 이름 삭제하기
+  if ( username ){
+    userHello.innerHTML += `<span class="icon_hide del_name">❌</span>`
+    const removeName = document.querySelector(".del_name");
+
+    removeName.addEventListener("click", function(){
+      localStorage.removeItem(USERNAME_KEY, username)
+      loginForm.classList.remove(HIDDEN_CLASSNAME);
+      userHello.classList.add(HIDDEN_CLASSNAME);
+    })
+  }
+
 }
 
 const isUsername = localStorage.getItem(USERNAME_KEY);
@@ -83,4 +96,3 @@ function focusOutput() {
 loginInput.addEventListener("focusin", focusInput);
 loginInput.addEventListener("focusout", focusOutput);
 
-// 이름 삭제하기
