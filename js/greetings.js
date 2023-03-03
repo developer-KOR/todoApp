@@ -69,6 +69,7 @@ function paintGreetings(username) {
       localStorage.removeItem(USERNAME_KEY, username)
       loginForm.classList.remove(HIDDEN_CLASSNAME);
       userHello.classList.add(HIDDEN_CLASSNAME);
+      saveTodo()
     })
   }
 
