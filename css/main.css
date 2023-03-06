@@ -56,7 +56,7 @@
 }
 
 #form-cont .form .calc_plus, .calc_minus, .calc_times, .calc_divide, .calc_powerof {
-  margin-left: 5%;
+  margin-left: 3%;
   font-size: 20px;
   color: #fff;
   background: #161616;
@@ -64,4 +64,19 @@
   border-radius: 8px;
   padding: 5px 10px;
   cursor: pointer;
+}
+
+#quote {
+  max-width: 90%;
+  margin: 25px auto 0;
+}
+
+#quote p {
+  font-size: 24px;
+  text-align: center;
+}
+
+#quote p:last-child {
+  margin-top: 15px;
+  font-size: 25px;
 }
