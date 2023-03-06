@@ -1,0 +1,67 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+#root {
+  height: 100vh;
+  color: #fff;
+  background: #161616;
+  font-family: "Roboto", "NanumSquare", "Nanum Gothic",sans-serif;
+}
+
+#container {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+#form-cont {
+  width: 50%;
+  height: 50%;
+}
+
+#form-cont .form > fieldset {
+  position: relative;
+  width: 100%;
+  height: 50vh;
+  border: 3px solid #fff;
+  border-radius: 10px;
+  text-align: center;
+  padding: 15px 0;
+}
+
+#form-cont .form > fieldset > legend {
+  font-size: 30px;
+  padding: 0 15px;
+  font-weight: bold;
+}
+
+#form-cont .form span, #form-cont .form label {
+  font-size: 24px;
+}
+
+#form-cont .form span {
+  font-size: 24px;
+}
+
+
+#form-cont .form input {
+  width: 120px;
+  height: 40px;
+  font-size: 20px;
+  color: #161616;
+}
+
+#form-cont .form .calc_plus, .calc_minus, .calc_times, .calc_divide, .calc_powerof {
+  margin-left: 5%;
+  font-size: 20px;
+  color: #fff;
+  background: #161616;
+  border: 2px solid #fff;
+  border-radius: 8px;
+  padding: 5px 10px;
+  cursor: pointer;
+}
