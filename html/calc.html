@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="css/main.css" />
+  <link rel="icon" href="img/starcraft_remastered.png">
+  <title>계산기</title>
+</head>
+<body>
+  <!-- main -->
+  <div id="root">
+    <section id="container">
+      <div id="form-cont">
+        <form class="form">
+          <fieldset>
+            <legend>계산기</legend>
+            <label>덧셈 : &nbsp;&nbsp;&nbsp;</label>
+            <input type="text" class="plus-a"/>
+            <span>&nbsp;&nbsp;&nbsp; ＋ &nbsp;&nbsp;&nbsp;</span>
+            <input type="text" class="plus-b"/>
+            <span>&nbsp;&nbsp;&nbsp; = &nbsp;&nbsp;&nbsp;</span>
+            <span class="plus_result"></span>
+            <button class="calc_plus">덧셈 계산</button>
+            <br />
+            <br />
+            <label>뺄셈 : &nbsp;&nbsp;&nbsp;</label>
+            <input type="text" class="minus-a"/>
+            <span>&nbsp;&nbsp;&nbsp; － &nbsp;&nbsp;&nbsp;</span>
+            <input type="text" class="minus-b"/>
+            <span>&nbsp;&nbsp;&nbsp; = &nbsp;&nbsp;&nbsp;</span>
+            <span class="minus_result"></span>
+            <button class="calc_minus">뺄셈 계산</button>
+            <br />
+            <br />
+            <label>곱셈 : &nbsp;&nbsp;&nbsp;</label>
+            <input type="text" class="times-a"/>
+            <span>&nbsp;&nbsp;&nbsp; × &nbsp;&nbsp;&nbsp;</span>
+            <input type="text" class="times-b"/>
+            <span>&nbsp;&nbsp;&nbsp; = &nbsp;&nbsp;&nbsp;</span>
+            <span class="times_result"></span>
+            <button class="calc_times">곱셈 계산</button>
+            <br />
+            <br />
+            <label>나눗셈 : &nbsp;&nbsp;&nbsp;</label>
+            <input type="text" class="divide-a"/>
+            <span>&nbsp;&nbsp;&nbsp; ÷ &nbsp;&nbsp;&nbsp;</span>
+            <input type="text" class="divide-b"/>
+            <span>&nbsp;&nbsp;&nbsp; = &nbsp;&nbsp;&nbsp;</span>
+            <span class="divide_result"></span>
+            <button class="calc_divide">나눗셈 계산</button>
+            <br />
+            <br />
+            <label>제곱 : &nbsp;&nbsp;&nbsp;</label>
+            <input type="text" class="powerof-a"/>
+            <span>&nbsp;&nbsp;&nbsp; ^ &nbsp;&nbsp;&nbsp;</span>
+            <input type="text" class="powerof-b"/>
+            <span>&nbsp;&nbsp;&nbsp; = &nbsp;&nbsp;&nbsp;</span>
+            <span class="powerof_result"></span>
+            <button class="calc_powerof">제곱 계산</button>
+          </fieldset>
+        </form>
+      </div>
+    </section>
+  </div>
+
+  <!-- script -->
+  <script src="js/main.js"></script>
+</body>
+</html>
