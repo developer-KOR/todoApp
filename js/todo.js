@@ -12,7 +12,7 @@
   2. 1의 태그들을 id값, 태그를 써서 변수로 지정한다.
   3. li, li > span을 createElement로 만든다.
   4. 만든 element들을 toDoList의 appendChild로 추가한다.
-  5. toDoInput에 입력된 value를 span에 불러온다.
+  5. toDoInput에 입력된 value를 span에 innerText로 불러온다.
 
     todo-list 지우는법
   1. 삭제버튼에 addEventListener로 click 이벤트를 감지한다.
@@ -23,7 +23,7 @@
     todo-list db에 저장하는법
   1. 할일 목록을 저장할 배열을 선언한다.
   2. 저장용 함수를 만든다.
-  3. 1의 함수 코드를 localStorage.setItem("키", 리스트변수)으로 쓴다.
+  3. 2의 함수 코드를 localStorage.setItem("키", 리스트변수)으로 쓴다.
   4. 리스트변수(todos)는 저장할때 문자열로 바꿔준다.
 
     todo-list 불러오는법
@@ -60,16 +60,17 @@ const savedList = document.querySelector("ol#saved-list");
 let todos = [];
 const TODOS_KEY = "todos";
 
-function deleteTodo(event){
+function deleteTodo(event) {
   const list = event.target.parentElement;
-  console.log(list.id);
   list.remove();
-  todos = todos.filter(item => { return item.id !== parseInt(list.id)} )
+  todos = todos.filter((item) => {
+    return item.id !== parseInt(list.id);
+  });
   saveTodo();
 }
 
-function saveTodo(){
-  localStorage.setItem(TODOS_KEY, JSON.stringify(todos))
+function saveTodo() {
+  localStorage.setItem(TODOS_KEY, JSON.stringify(todos));
 }
 
 function listTodo(newToDo) {
@@ -77,10 +78,10 @@ function listTodo(newToDo) {
   const span = document.createElement("span");
   span.innerText = newToDo.text;
   list.id = newToDo.id;
-  
+
   const delBtn = document.createElement("button");
   delBtn.innerText = "❌";
-  delBtn.addEventListener("click", deleteTodo)
+  delBtn.addEventListener("click", deleteTodo);
 
   list.appendChild(span);
   list.appendChild(delBtn);
@@ -95,6 +96,7 @@ function toDoSubmit(e) {
   const newTodoObj = {
     text: newTodo,
     id: Date.now(),
+    checked: false,
   };
   todos.push(newTodoObj);
   listTodo(newTodoObj);
@@ -104,20 +106,20 @@ toDoForm.addEventListener("submit", toDoSubmit);
 
 const savedTodos = localStorage.getItem(TODOS_KEY);
 
-if ( savedTodos !== null ){
+if (savedTodos !== null) {
   const loadTodos = JSON.parse(savedTodos);
   todos = loadTodos;
   loadTodos.forEach(listTodo);
-    // 내가한방법 : loadTodos.forEach(item => { const loadLists = document.createElement("li"); loadLists.innerText = item; savedList.appendChild(loadLists); })
+  // 내가한방법 : loadTodos.forEach(item => { const loadLists = document.createElement("li"); loadLists.innerText = item; savedList.appendChild(loadLists); })
 }
 
 // placeholder 추가 제거
-function focusInput (){
-  toDoInput.placeholder = '';
-  toDoInput.style.fontFamily = 'Noto Sans KR';
+function focusInput() {
+  toDoInput.placeholder = "";
+  toDoInput.style.fontFamily = "Noto Sans KR";
 }
 
-function focusOutput (){
+function focusOutput() {
   toDoInput.placeholder = `What's your today's work?`;
 }
 
