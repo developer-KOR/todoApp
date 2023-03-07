@@ -205,5 +205,13 @@
 }
 
 .audio figcaption {
-  margin-bottom: 10px;
+  display: inline;
+  margin-bottom: 5px;
+}
+
+.audio span {
+  display: inline-block;
+  font-size: 24px;
+  margin-left: 5px;
+  cursor: pointer;
 }
