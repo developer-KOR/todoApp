@@ -80,3 +80,222 @@
   margin-top: 15px;
   font-size: 25px;
 }
+
+/******** 반응형 ************/
+@media screen and (max-width: 320px) {
+  #form-cont {
+    width: 90%;
+    height: 75%;
+  }
+
+  #form-cont .form > fieldset {
+    height: 70vh;
+  }
+
+  #form-cont .form > fieldset > legend {
+    font-size: 20px;
+    padding: 0 5px;
+  }
+
+  #form-cont .form input {
+    width: 30px;
+    height: 12px;
+    font-size: 12px;
+  }
+
+  #form-cont .form span, #form-cont .form label, #form-cont .form span {
+    font-size: 13px;
+  }
+
+  #form-cont .form .calc_plus, .calc_minus, .calc_times, .calc_divide, .calc_powerof {
+    margin-top: 2%;
+    font-size: 13px;
+    border: 1px solid #fff;
+    padding: 3px 5px;
+  }
+
+  #quote {
+    margin: 10px auto 0;
+  }
+  
+  #quote p {
+    font-size: 13px;
+  }
+  
+  #quote p:last-child {
+    margin-top: 5px;
+    font-size: 14px;
+  }
+}
+
+@media screen and (min-width:321px) and (max-width: 480px) {
+  #form-cont {
+    width: 92%;
+    height: 70%;
+  }
+
+  #form-cont .form > fieldset {
+    height: 55vh;
+  }
+
+  
+  #form-cont .form > fieldset > legend {
+    font-size: 24px;
+    padding: 0 7px;
+  }
+
+  #form-cont .form input {
+    width: 50px;
+    height: 22px;
+    font-size: 13px;
+  }
+
+  #form-cont .form span, #form-cont .form label, #form-cont .form span {
+    font-size: 15px;
+  }
+
+  #form-cont .form .calc_plus, .calc_minus, .calc_times, .calc_divide, .calc_powerof {
+    margin-top: 2%;
+    font-size: 15px;
+    border: 1px solid #fff;
+    padding: 3px 5px;
+  }
+
+  #quote {
+    margin: 15px auto 0;
+  }
+  
+  #quote p {
+    font-size: 18px;
+    text-align: center;
+  }
+  
+  #quote p:last-child {
+    margin-top: 5px;
+    font-size: 16px;
+  }
+}
+
+
+@media screen and (min-width:481px) and (max-width: 720px) {
+  #form-cont {
+    width: 92%;
+    height: 70%;
+  }
+
+  #form-cont .form > fieldset {
+    height: 60vh;
+  }
+  
+  #form-cont .form > fieldset > legend {
+    font-size: 27px;
+    padding: 0 10px;
+  }
+
+  #form-cont .form input {
+    width: 70px;
+    height: 25px;
+    font-size: 14px;
+  }
+
+  #form-cont .form span, #form-cont .form label, #form-cont .form span {
+    font-size: 17px;
+  }
+
+  #form-cont .form .calc_plus, .calc_minus, .calc_times, .calc_divide, .calc_powerof {
+    font-size: 17px;
+    border: 2px solid #fff;
+    padding: 5px 8px;
+  }
+
+  #quote {
+    margin: 20px auto 0;
+  }
+  
+  #quote p {
+    font-size: 20px;
+  }
+  
+  #quote p:last-child {
+    font-size: 18px;
+  }
+}
+
+@media screen and (min-width:721px) and (max-width: 1024px) {
+  #form-cont {
+    width: 92%;
+    height: 70%;
+  }
+
+  #form-cont .form > fieldset {
+    height: 60vh;
+  }
+  
+  #form-cont .form > fieldset > legend {
+    font-size: 28px;
+    padding: 0 10px;
+  }
+
+  #form-cont .form input {
+    width: 100px;
+    height: 35px;
+    font-size: 16px;
+  }
+
+  #form-cont .form span, #form-cont .form label, #form-cont .form span {
+    font-size: 20px;
+  }
+
+  #form-cont .form .calc_plus, .calc_minus, .calc_times, .calc_divide, .calc_powerof {
+    font-size: 20px;
+    border: 3px solid #fff;
+    padding: 5px 10px;
+  }
+  
+  #quote p {
+    font-size: 24px;
+  }
+  
+  #quote p:last-child {
+    font-size: 22px;
+  }
+}
+
+
+@media screen and (min-width:1025px) and (max-width: 1440px) {
+  #form-cont {
+    width: 90%;
+    height: 70%;
+  }
+
+  #form-cont .form > fieldset {
+    height: 60vh;
+  }
+  
+  #form-cont .form > fieldset > legend {
+    font-size: 28px;
+    padding: 0 10px;
+  }
+
+  #form-cont .form input {
+    width: 150px;
+    height: 40px;
+    font-size: 18px;
+  }
+
+  #form-cont .form span, #form-cont .form label, #form-cont .form span {
+    font-size: 22px;
+  }
+
+  #form-cont .form .calc_plus, .calc_minus, .calc_times, .calc_divide, .calc_powerof {
+    font-size: 22px;
+  }
+  
+  #quote p {
+    font-size: 24px;
+  }
+  
+  #quote p:last-child {
+    font-size: 22px;
+  }
+}
