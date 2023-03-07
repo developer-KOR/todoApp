@@ -16,7 +16,13 @@
   src: url(../font/Starcraft\ Normal.ttf);
 }
 
-#todo-form, #todo-list, #clock, #greeting, #login-form, #quote, #weather {
+#todo-form,
+#todo-list,
+#clock,
+#greeting,
+#login-form,
+#quote,
+#weather {
   margin: 15px 0;
   text-align: center;
   z-index: 1;
@@ -38,24 +44,24 @@
   justify-content: center;
   flex-basis: content;
   height: 100vh;
-  font-family: 'Starcraft', 'Roboto', 'Noto Sans KR', sans-serif;
+  font-family: "Starcraft", "Roboto", "Noto Sans KR", sans-serif;
   color: #fff;
 }
-
 
 #wrap h1 {
   font-size: 64px;
   margin-left: 28px;
 }
 
-#wrap h1 .icon_hide, #wrap h1:hover .icon_hide {
+#wrap h1 .icon_hide,
+#wrap h1:hover .icon_hide {
   font-size: 28px;
   vertical-align: middle;
 }
 
 #wrap h1 .icon_hide {
   opacity: 0;
-  transition: .3s;
+  transition: 0.3s;
 }
 
 #wrap h1:hover .icon_hide {
@@ -65,13 +71,12 @@
 
 .name_btn {
   cursor: pointer;
-  transition: all .3s;
+  transition: all 0.3s;
 }
 
 #wrap h2 {
   font-size: 48px;
 }
-
 
 .cover {
   position: absolute;
@@ -91,8 +96,8 @@
   z-index: -1;
 }
 
-
-#todo-form input, #login-form input:first-child {
+#todo-form input,
+#login-form input:first-child {
   width: 350px;
   height: 30px;
   color: #fff;
@@ -106,7 +111,7 @@
 }
 
 #login-form input:first-child::placeholder {
-  font-family: 'Starcraft', sans-serif;
+  font-family: "Starcraft", sans-serif;
   text-align: center;
   color: #fff;
   font-size: 16px;
@@ -116,7 +121,7 @@
 #todo-form input::placeholder {
   color: #fff;
   margin-bottom: 5px;
-  font-family: 'Starcraft', sans-serif;
+  font-family: "Starcraft", sans-serif;
   font-size: 16px;
   opacity: 0.8;
 }
@@ -185,8 +190,20 @@
   position: absolute;
   bottom: 0px;
   right: 15px;
-  font-family: 'NanumSquare', sans-serif;
+  font-family: "NanumSquare", sans-serif;
   font-size: 24px;
   font-weight: bold;
   text-align: center;
-} 
+}
+
+.audio {
+  position: absolute;
+  z-index: 1;
+  left: 10px;
+  bottom: 10px;
+  text-align: center;
+}
+
+.audio figcaption {
+  margin-bottom: 10px;
+}
