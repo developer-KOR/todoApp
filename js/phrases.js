@@ -8,7 +8,7 @@ const quotes = [
     author: "Paul Rand",
   },
   {
-    quote: "Do not be afraid to give up the good to go for the great",
+    quote: "Do not be afraid to give up the good to go for the great.",
     author: "John D. Rockefeller",
   },
   {
