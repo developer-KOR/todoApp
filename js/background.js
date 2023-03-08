@@ -6,10 +6,11 @@
 
 const images = ["0.jpg", "1.jpg", "2.jpg", "3.jpg", "4.jpg", "5.jpg"];
 const ranImg = images[Math.floor(Math.random() * images.length)];
-
+const wrap = document.querySelector("#wrap");
 const bgImg = document.createElement("img");
+
 bgImg.src = `img/${ranImg}`;
 bgImg.classList.add("background");
 
-document.body.append(bgImg);
+wrap.append(bgImg);
 
