@@ -53,7 +53,6 @@ const AUTO_PLAY = "autoplay";
 audioTitle.innerText = audioFile[audioIndex].title;
 audioSrc.src = audioFile[audioIndex].src;
 audioSrc.type = "audio/mp3"
-audio.autoplay = AUTO_PLAY;
 
 audioWrap.prepend(audioTitle);
 audioWrap.appendChild(audio);
@@ -62,18 +61,17 @@ audio.appendChild(audioSrc);
 function volume(e){
   e.preventDefault();
   
-  if ( volumeBtn.classList.contains("off") ){
-    audio.play();
-    volumeBtn.innerText = "🔊";
-    volumeBtn.classList.remove("off")
-    volumeBtn.classList.add("on")
-
-  } else if ( volumeBtn.classList.contains("on") ){
-    audio.pause();
-    volumeBtn.innerText = "🔈";
-    volumeBtn.classList.remove("on")
-    volumeBtn.classList.add("off")
-  }
+   if ( volumeBtn.classList.contains("off") ){
+     audio.play();
+     volumeBtn.innerText = "🔊";
+     volumeBtn.classList.add("on")
+     volumeBtn.classList.remove("off")
+   } else if ( volumeBtn.classList.contains("on") ){
+      audio.pause();
+      volumeBtn.innerText = "🔈";
+      volumeBtn.classList.add("off")
+      volumeBtn.classList.remove("on")
+    }
 }
 
 volumeBtn.addEventListener("click", volume)
