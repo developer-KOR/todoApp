@@ -65,12 +65,15 @@ function paintGreetings(username) {
     userHello.innerHTML += `<span class="icon_hide del_name">❌</span>`
     const removeName = document.querySelector(".del_name");
 
-    removeName.addEventListener("click", function(){
-      localStorage.removeItem(USERNAME_KEY, username)
-      loginForm.classList.remove(HIDDEN_CLASSNAME);
-      userHello.classList.add(HIDDEN_CLASSNAME);
+    removeName.addEventListener("click", function(e){
+      e.preventDefault();
+      localStorage.removeItem(USERNAME_KEY, username);
       saveTodo();
+      userHello.classList.add(HIDDEN_CLASSNAME);  
+      loginForm.classList.remove(HIDDEN_CLASSNAME);
     })
+    
+
   }
 
 }
